@@ -1,0 +1,4 @@
+#포트 80 443 리눅스 가능하게 
+                                  자바 경로
+setcap 'cap_net_bind_service=+ep' /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java
+setcap 'cap_net_bind_service=+ep' /home/user/downloads/jdk8/jdk1.8.0_271/jre/bin/java
