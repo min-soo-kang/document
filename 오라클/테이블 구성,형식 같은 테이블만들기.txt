@@ -1,0 +1,10 @@
+create table sample_table as select * from original_table;
+
+
+생성된 테이블과 기존 테이블의 구성이 같은 경우 데이터 Insert
+
+insert into sample_table select * from original_table;
+
+생성된 테이블의 column과 기존 테이블의 column구성이 다른 경우 데이터 insert = 일부분만 가져오고 싶은 경우
+insert into sample_table(column1, column2, ...)
+select column1, column2, ... from original_table where 조건가능;
