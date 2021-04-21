@@ -1,0 +1,9 @@
+바로로 위의 열과 혹은 바로 아래의 열과 연산
+LAG(column1,A,B) over(order by column2) as 새이름
+LEAD(column1,A,B) over(order by column2) as 새이름
+
+
+여기서 LAG는 이전 (위의) A번째 Row 를 불러오며 LEAD는 다음번(아래) A번째 Row를 불러온다.
+B는 만약 해당 값이 null 값일 때 B를 output으로 쓰라는 것이다.
+A 와 B 는 빈칸으로 둘 수 있는데 빈칸으로 두면 A = 1 이 default 값이고 B 는 null이 default 값이다.
+as 도 생략 가능하다
